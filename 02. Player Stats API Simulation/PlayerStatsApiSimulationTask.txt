@@ -1,0 +1,19 @@
+DISCLAIMER:
+-> THIS TASK IS AI-GENERATED FOR THE PURPOSES OF PREPARING FOR THE INTERVIEW
+-> MODEL USED: Claude Opus 4.6
+------------------------------------------------------------------------------------------------------------------------
+You're given a JSON string representing player statistics returned from an API. Parse it and work with the data.
+
+Define a PlayerStats class with properties: Name (string), Sport (string), GamesPlayed (int), Points (double).
+Write a method List<PlayerStats> ParsePlayerStats(string json) that deserializes the following JSON string into a list of PlayerStats:
+
+json[
+  { "Name": "LeBron James", "Sport": "Basketball", "GamesPlayed": 72, "Points": 25.7 },
+  { "Name": "Patrick Mahomes", "Sport": "Football", "GamesPlayed": 16, "Points": 33.4 },
+  { "Name": "Lionel Messi", "Sport": "Soccer", "GamesPlayed": 30, "Points": 18.2 },
+  { "Name": "Nikola Jokic", "Sport": "Basketball", "GamesPlayed": 79, "Points": 26.4 }
+]
+
+Write a method List<PlayerStats> GetTopScorers(List<PlayerStats> players, int topN) that returns the top N players sorted by Points descending.
+Write a method Dictionary<string, double> AveragePointsBySport(List<PlayerStats> players) that returns the average points grouped by sport.
+Demonstrate it all in Main.

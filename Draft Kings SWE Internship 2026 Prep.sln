@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Sports Bet Tracker", "01. Sports Bet Tracker\01. Sports Bet Tracker.csproj", "{081345E0-46E7-4108-8DA8-3298C6F8794B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Player Stats API Simulation", "02. Player Stats API Simulation\02. Player Stats API Simulation.csproj", "{E832224C-DB43-4F7E-AC9B-F98ECAFD5E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{081345E0-46E7-4108-8DA8-3298C6F8794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{081345E0-46E7-4108-8DA8-3298C6F8794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{081345E0-46E7-4108-8DA8-3298C6F8794B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E832224C-DB43-4F7E-AC9B-F98ECAFD5E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E832224C-DB43-4F7E-AC9B-F98ECAFD5E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E832224C-DB43-4F7E-AC9B-F98ECAFD5E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E832224C-DB43-4F7E-AC9B-F98ECAFD5E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
