@@ -1,0 +1,16 @@
+DISCLAIMER:
+-> THIS TASK IS AI-GENERATED FOR THE PURPOSES OF PREPARING FOR THE INTERVIEW
+-> MODEL USED: Claude Opus 4.6
+------------------------------------------------------------------------------------------------------------------------
+You're building a simple system to track sports bets. Implement the following:
+
+Create a Bet class with properties: Id (int), PlayerName (string), Amount (decimal), Odds (double), and IsWon (bool, default false).
+Create a BetTracker class that internally stores a list of bets and exposes these methods:
+
+AddBet(Bet bet) — adds a bet to the tracker
+SettleBet(int id, bool won) — finds the bet by ID, sets IsWon, and returns the payout (if won: Amount * Odds, if lost: 0)
+GetTotalPayout() — returns the sum of payouts for all won bets
+GetBetsByPlayer(string playerName) — returns all bets for a given player
+
+
+Write a short Main method that demonstrates adding a few bets, settling them, and printing the total payout.
