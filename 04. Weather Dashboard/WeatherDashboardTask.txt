@@ -1,0 +1,27 @@
+DISCLAIMER:
+-> THIS TASK IS AI-GENERATED FOR THE PURPOSES OF PREPARING FOR THE INTERVIEW
+-> MODEL USED: Claude Opus 4.6
+------------------------------------------------------------------------------------------------------------------------
+You'll use the Open-Meteo API (free, no API key needed) to build a small weather lookup tool.
+API endpoint:
+https://api.open-meteo.com/v1/forecast?latitude=42.6977&longitude=23.3219&current_weather=true
+Example response:
+json{
+  "current_weather": {
+    "temperature": 22.5,
+    "windspeed": 12.3,
+    "weathercode": 1,
+    "time": "2026-04-22T14:00"
+  }
+}
+Your tasks:
+
+Create the classes needed to deserialize the response (WeatherResponse, CurrentWeather).
+Create a WeatherService class with an async method:
+Task<CurrentWeather> GetWeatherAsync(double latitude, double longitude)
+— uses HttpClient to call the API and returns the deserialized current weather.
+Create a WeatherInterpreter class with a static method:
+string DescribeWeather(CurrentWeather weather)
+— returns a human-readable string, e.g. "22.5°C with wind at 12.3 km/h (Clear sky)".
+Map at least these weather codes: 0 = "Clear sky", 1 = "Mainly clear", 2 = "Partly cloudy", 3 = "Overcast", 45 = "Foggy", 61 = "Light rain", 63 = "Moderate rain", 80 = "Rain showers".
+In Main, look up the weather for at least 3 cities (hardcode their coordinates) and print the description for each.

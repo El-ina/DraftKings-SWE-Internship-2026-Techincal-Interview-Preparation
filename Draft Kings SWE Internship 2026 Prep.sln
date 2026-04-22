@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Player Stats API Simula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Live Odds Feed Processor", "03. Live Odds Feed Processor\03. Live Odds Feed Processor.csproj", "{A4574472-FF7E-4133-9F3C-CB44FE1A0D61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Weather Dashboard", "04. Weather Dashboard\04. Weather Dashboard.csproj", "{E7C69E1D-7BEE-4828-AC02-8216F73DD567}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A4574472-FF7E-4133-9F3C-CB44FE1A0D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4574472-FF7E-4133-9F3C-CB44FE1A0D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4574472-FF7E-4133-9F3C-CB44FE1A0D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C69E1D-7BEE-4828-AC02-8216F73DD567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C69E1D-7BEE-4828-AC02-8216F73DD567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C69E1D-7BEE-4828-AC02-8216F73DD567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C69E1D-7BEE-4828-AC02-8216F73DD567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
