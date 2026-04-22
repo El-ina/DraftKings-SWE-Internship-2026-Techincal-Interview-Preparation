@@ -1,0 +1,32 @@
+DISCLAIMER:
+-> THIS TASK IS AI-GENERATED FOR THE PURPOSES OF PREPARING FOR THE INTERVIEW
+-> MODEL USED: Claude Opus 4.6
+------------------------------------------------------------------------------------------------------------------------
+You receive a JSON string representing a live feed of betting odds from multiple sportsbooks. Your job is to process it and find the best value.
+Here's the JSON:
+json[
+  {
+    "eventName": "Lakers vs Celtics",
+    "market": "Moneyline",
+    "odds": [
+      { "sportsbook": "DraftKings", "homeOdds": 1.85, "awayOdds": 2.05 },
+      { "sportsbook": "FanDuel", "homeOdds": 1.90, "awayOdds": 2.00 },
+      { "sportsbook": "BetMGM", "homeOdds": 1.80, "awayOdds": 2.10 }
+    ]
+  },
+  {
+    "eventName": "Chiefs vs Eagles",
+    "market": "Moneyline",
+    "odds": [
+      { "sportsbook": "DraftKings", "homeOdds": 1.70, "awayOdds": 2.25 },
+      { "sportsbook": "FanDuel", "homeOdds": 1.75, "awayOdds": 2.20 },
+      { "sportsbook": "BetMGM", "homeOdds": 1.65, "awayOdds": 2.30 }
+    ]
+  }
+]
+
+Create the classes needed to deserialize this structure (Event, OddsEntry, etc.)
+Write List<Event> ParseFeed(string json) to deserialize the feed.
+Write OddsEntry GetBestHomeOdds(Event event) — returns the sportsbook offering the highest home odds for a given event.
+Write a method Dictionary<string, string> BestHomeOddsPerEvent(List<Event> events) — returns a dictionary mapping each event name to the sportsbook with the best home odds.
+Bonus: Write bool HasArbitrageOpportunity(Event event) — an arbitrage exists if (1/bestHomeOdds) + (1/bestAwayOdds) < 1 across different sportsbooks. Return whether one exists.
